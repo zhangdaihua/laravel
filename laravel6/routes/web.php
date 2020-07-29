@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::group([],function(){
+    Route::get('admin/index', 'IndexController@index');
+    Route::get('admin/welcome', 'IndexController@welcome');
+});
